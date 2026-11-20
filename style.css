@@ -191,3 +191,18 @@ a{color:inherit;text-decoration:none}
 
 .testimonial-rating{display:flex;align-items:center;gap:9px;color:#e4b65f;font-size:18px;letter-spacing:2px;line-height:1}
 .testimonial-rating span{color:#d8c4a8;font:600 11px var(--sans);letter-spacing:0}
+
+/* Novidades e bastidores com links para o Instagram */
+.updates{padding-top:100px;padding-bottom:105px;background:#2a1d15}
+.updates-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:42px}
+.update-card{position:relative;display:block;min-height:330px;overflow:hidden;border:1px solid rgba(211,170,112,.2);background:#38271d;isolation:isolate}
+.update-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease;filter:saturate(.82)}
+.update-card:hover img{transform:scale(1.055)}
+.update-card:after{content:"";position:absolute;inset:25% 0 0;background:linear-gradient(transparent,rgba(20,12,8,.92));z-index:0}
+.update-overlay{position:absolute;z-index:1;left:22px;right:18px;bottom:22px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.update-overlay small{font-size:8px;font-weight:700;letter-spacing:.17em;color:#e4bd83}
+.update-overlay strong{font:500 26px var(--serif);color:#fff0dc}
+.update-overlay>span{font-size:10px;color:#e4d3bd}
+.updates-cta{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:30px;padding-top:24px;border-top:1px solid rgba(211,170,112,.18)}
+.updates-cta p{margin:0;color:#c5b29a;font:italic 17px var(--serif)}
+@media(max-width:760px){.updates{padding-top:75px;padding-bottom:80px}.updates-grid{grid-template-columns:1fr;gap:13px;margin-top:28px}.update-card{min-height:260px}.update-overlay{left:18px;bottom:18px}.updates-cta{align-items:flex-start;flex-direction:column}.updates-cta p{font-size:15px}}
