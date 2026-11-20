@@ -1,0 +1,28 @@
+{
+  "name": "panificadora-condadense",
+  "version": "1.0.0",
+  "description": "Website for Panificadora Condadense - Bakery in Condado, PE",
+  "main": "script.js",
+  "scripts": {
+    "build": "esbuild src/script.js --bundle --outfile=script.js --format=esm --minify",
+    "dev": "esbuild src/script.js --bundle --outfile=script.js --format=esm --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasaarj/Panificadora_Condadense.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasaarj/Panificadora_Condadense/issues"
+  },
+  "homepage": "https://github.com/lucasaarj/Panificadora_Condadense#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
