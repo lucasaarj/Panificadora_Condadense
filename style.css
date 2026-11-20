@@ -144,3 +144,27 @@ a{color:inherit;text-decoration:none}
 .gallery-item figcaption{position:absolute;left:18px;bottom:16px;color:#fff;font-size:13px;font-weight:600;letter-spacing:.03em;z-index:1}
 @media(max-width:760px){.gallery{padding-top:75px;padding-bottom:80px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:10px;margin-top:28px}.gallery-item.gallery-main{grid-column:span 2;grid-row:span 2}.gallery-item figcaption{left:12px;bottom:12px;font-size:11px}}
 @media(max-width:380px){.gallery-grid{grid-auto-rows:125px}}
+
+/* Localização, funcionamento e redes sociais */
+.location-details{display:grid;grid-template-columns:.9fr 1.1fr;gap:7%;align-items:center;padding-top:100px;padding-bottom:110px;background:#2a1d15}
+.location-copy h2{font:500 clamp(36px,4vw,52px)/1.12 var(--serif);letter-spacing:-.035em;margin:0;color:#f1e5d3}
+.location-copy h2 em{color:var(--gold);font-weight:500}
+.address-block,.hours-block{display:flex;gap:17px;margin-top:34px;align-items:flex-start}
+.detail-icon{font-size:25px;color:var(--gold);line-height:1}
+.address-block h3,.hours-block h3{font:600 18px var(--serif);margin:0 0 8px;color:#f2e5d2}
+.address-block p{font-size:12px;color:#b9a894;margin:0 0 9px}
+.address-block a{font-size:11px;color:var(--gold);border-bottom:1px solid rgba(211,170,112,.4);padding-bottom:4px}
+.hours-list{margin:0;display:grid;gap:11px}
+.hours-list div{display:flex;justify-content:space-between;gap:18px;font-size:11px;line-height:1.6}
+.hours-list dt{color:#b9a894}.hours-list dd{margin:0;color:#f0e5d5;text-align:right;font-weight:600}
+.instagram-link{display:flex;align-items:center;gap:13px;margin-top:35px;padding:17px 18px;border:1px solid rgba(211,170,112,.28);background:rgba(255,255,255,.025);max-width:390px;transition:background .2s,border-color .2s}
+.instagram-link:hover{background:rgba(211,170,112,.09);border-color:var(--gold)}
+.instagram-symbol{font-size:28px;color:var(--gold)}
+.instagram-link span:nth-child(2){display:grid;gap:4px;flex:1}
+.instagram-link small{font-size:8px;letter-spacing:.15em;color:#b9a894}
+.instagram-link strong{font:600 16px var(--serif);color:#f2e5d2}
+.instagram-link b{color:var(--gold)}
+.map-frame{height:480px;overflow:hidden;border:1px solid rgba(211,170,112,.3);border-radius:12px;box-shadow:0 20px 55px rgba(0,0,0,.2)}
+.map-frame iframe{width:100%;height:100%;border:0;display:block}
+@media(max-width:850px){.location-details{grid-template-columns:1fr;gap:38px;padding-top:75px;padding-bottom:80px}.map-frame{height:390px}}
+@media(max-width:480px){.hours-list div{display:grid;gap:2px}.hours-list dd{text-align:left}.map-frame{height:330px}}
