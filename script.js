@@ -1,13 +1,10 @@
-// Ajuste aqui os dados oficiais da Panificadora Condadense.
 const CONFIG = {
-  // Use somente números: código do país + DDD + telefone.
   whatsapp: "5581974005164",
   mensagem: "Olá! Gostaria de informações sobre os produtos da Panificadora Condadense."
 };
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Menu mobile
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 menuButton.addEventListener("click", () => {
@@ -21,7 +18,6 @@ nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
   menuButton.textContent = "☰";
 }));
 
-// Filtro de categorias do catálogo
 const filterButtons = document.querySelectorAll(".filter");
 const productCards = document.querySelectorAll(".product-card");
 filterButtons.forEach(button => {
