@@ -128,3 +128,5 @@ a{color:inherit;text-decoration:none}
  .footer{padding:40px 6% 18px}.footer-bottom{gap:15px;line-height:1.7;flex-direction:column}.brand-name{font-size:14px}
 }
 @media(max-width:380px){.product-image{height:170px}.hero h1{font-size:43px}.button{gap:14px;padding:15px}.filter{font-size:9px}}
+
+.brand-logo{width:76px;height:76px;object-fit:contain;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.22))}.footer .brand-logo{width:82px;height:82px}@media(max-width:650px){.brand-logo{width:64px;height:64px}.footer .brand-logo{width:72px;height:72px}}
